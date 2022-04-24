@@ -1,5 +1,6 @@
 pipeline { 
-  agent any stages { 
+  agent any 
+  stages { 
     stage('Testing') { 
       steps { 
         echo 'running Tests' bat 'mvn test'
